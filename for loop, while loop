@@ -1,0 +1,40 @@
+#This script shows different loop styles in writing a python script. 
+
+#!/bin/python3
+
+list=[]
+n = input("enter a number: ")
+list.append(n)
+
+n1 = input("enter a number: ")
+list.append(n1)
+
+n2 = input("enter a number: ")
+list.append(n2)
+
+n3 = raw_input("enter a letter: ")
+list.append(n3)
+print(list)
+
+#to repeat process in python use a loop, either for or while loop
+#to repeat the above script using for loop
+
+n = int(input("enter the length of the list: "))
+list = []
+for i in range(n):
+	j = input("enter a value: ")
+	list.append(j)
+print(list)
+
+#using a while loop. while loop continues as long as the arguement is true
+#the break function ends the while loop.
+
+lst2 = []
+while True:
+	y = int(input("enter a value: "))
+	lst2.append(y)
+	choice = input("if you want to stop, press yes now, otherwise press any key: ")
+	if choice == "yes":
+		break
+		
+print(lst2)
